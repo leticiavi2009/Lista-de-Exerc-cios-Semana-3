@@ -1,0 +1,31 @@
+---
+## **Exercício 3:** Cadê você?
+
+As monitoras têm que procurar os nomes das alunas nas listas de presença para marcar frequência e você topou ajudar! Dado um nome alvo em uma linha inicial, seu programa deve ler nomes em novas linhas até que um nome igual ao alvo seja dado, e informar quantos nomes foram lidos antes do alvo.
+
+*Exemplo*
+Entrada digitada:
+```
+Ana
+Yasmin
+Maria
+Ana
+```
+
+Programa imprime:
+```
+2
+```
+---------------------------------------
+#Exercícios3
+
+nome = input()
+nomes = " "
+soma = 0
+
+while nomes != nome:
+  nomes = input()
+  soma = soma + 1
+
+print(soma - 1)
+---------------------------------------
