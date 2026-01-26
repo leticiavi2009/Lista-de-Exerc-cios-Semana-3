@@ -1,0 +1,195 @@
+---
+## **Exercício 1:** Robô de feira
+
+Você ficou encarregada de programar uma nova linha de robôs que possuem um cesto para fazer feira: as pessoas vão à feira e o robô segue atrás. Na feira, as pessoas vão comprando frutas, legumes e verduras, que são colocados no cesto do robô.
+
+Cada modelo na nova linha de robôs tem um peso máximo que consegue carregar. Quando esse peso máximo é alcançado ou superado, o robô deve avisar. Se o peso total for igual à capacidade do robô, o último item pode permanecer no cesto. Se o peso total ultrapassar a capacidade, o último item deve ser retirado.
+
+Dada a capacidade de um modelo de robô de feira, seu programa deve aceitar pesos de itens até que a capacidade seja alcançada ou superada. Quando isso acontecer, o programa deve imprimir a mensagem correta.
+
+*Exemplos*
+
+Entrada digitada:
+```
+500
+100
+100
+100
+100
+100
+```
+Programa imprime:
+```
+Fim de feira: pode levar tudo
+```
+
+Entrada digitada:
+```
+800
+300
+400
+200
+```
+
+Programa imprime:
+```
+Fim de feira: retire o último item
+```
+---------------------------------------
+
+#Exercício1
+
+capacidade = int(input())
+pesos1 = 0
+
+while pesos1 < capacidade:
+  pesos = int(input())
+  pesos1 = pesos + pesos1
+
+if pesos1 > capacidade:
+  print("Fim de feira, retire o último item")
+
+elif pesos1 == capacidade:
+  print("Fim de feira: pode levar tudo")
+
+  -------------------------------------
+
+## **Exercício 2:** Positivos, Negativos e Nulo
+
+A professora do Fundamental está ensinando as crianças que existem números positivos, que existe o valor nulo, e que existem números negativos. Ela pediu sua ajuda para fazer um programa que recebe valores inteiros de entrada até que seja dado um valor negativo, e informa quantos valores positivos foram lidos.
+
+*Exemplo*
+Entrada digitada:
+```
+1
+2
+0
+5
+-1
+```
+
+Programa imprime:
+```
+3
+```
+---------------------------------------
+#Exercício2
+
+positivos = 0
+numeros = 0
+
+while numeros >= 0:
+  numeros = int(input())
+  if numeros > 0:
+    positivos = positivos + 1
+
+print(positivos)
+---------------------------------------
+---
+## **Exercício 3:** Cadê você?
+
+As monitoras têm que procurar os nomes das alunas nas listas de presença para marcar frequência e você topou ajudar! Dado um nome alvo em uma linha inicial, seu programa deve ler nomes em novas linhas até que um nome igual ao alvo seja dado, e informar quantos nomes foram lidos antes do alvo.
+
+*Exemplo*
+Entrada digitada:
+```
+Ana
+Yasmin
+Maria
+Ana
+```
+
+Programa imprime:
+```
+2
+```
+---------------------------------------
+#Exercícios3
+
+nome = input()
+nomes = " "
+soma = 0
+
+while nomes != nome:
+  nomes = input()
+  soma = soma + 1
+
+print(soma - 1)
+---------------------------------------
+---
+## **Exercício 4:** Injustiça salarial
+
+A professora está estudando a diferença salarial entre homens e mulheres em uma mesma função. Para isso, ela pediu sua ajuda para criar um programa que leia pares de salários, sendo sempre o salário do homem primeiro e o da mulher em seguida. A leitura termina quando o par -1 e -1 for informado.
+
+O programa deve contar quantos pares indicam igualdade salarial entre homem e mulher naquela posição, e imprimir esse total.
+
+*Exemplo*
+
+Entrada digitada:
+```
+1000.00
+1000.00
+1200.00
+1100.00
+-1
+-1
+```
+
+Programa imprime:
+```
+1
+```
+---------------------------------------
+#Exercício4
+
+salario = 0
+salario1 = 0
+
+igualdade = 0
+
+while salario1 != -1 and salario != -1 :
+  salario = float(input())
+  salario1 = float(input())
+  if salario == salario1:
+    igualdade = igualdade + 1
+
+print(igualdade - 1)
+---------------------------------------
+---
+## **Exercício 5:** Entradas e Saídas
+
+A professora está ajudando seus alunos a entender como funcionam operações de entrada e saída em um caixa de banco. Ela pediu sua ajuda para criar um programa que leia valores numéricos representando essas operações:
+
+- Valores positivos representam depósitos.
+- Valores negativos representam saques.
+- A leitura termina quando for digitado o valor 0.
+
+O programa deve calcular e imprimir o saldo final ao fim do dia.
+
+*Exemplo*
+
+Entrada digitada:
+```
+100
+-20
+-30
+50
+0
+```
+
+Programa imprime:
+```
+100
+```
+---------------------------------------
+#Exercício5
+
+saldo = 0
+saldo1 = 1
+
+while saldo1 != 0:
+  saldo1 = int(input())
+  saldo = saldo1 + saldo
+
+print( saldo )
+---------------------------------------
