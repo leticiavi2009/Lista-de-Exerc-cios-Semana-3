@@ -54,37 +54,7 @@ elif pesos1 == capacidade:
 
   -------------------------------------
 
-## **Exercício 2:** Positivos, Negativos e Nulo
 
-A professora do Fundamental está ensinando as crianças que existem números positivos, que existe o valor nulo, e que existem números negativos. Ela pediu sua ajuda para fazer um programa que recebe valores inteiros de entrada até que seja dado um valor negativo, e informa quantos valores positivos foram lidos.
-
-*Exemplo*
-Entrada digitada:
-```
-1
-2
-0
-5
--1
-```
-
-Programa imprime:
-```
-3
-```
----------------------------------------
-#Exercício2
-
-positivos = 0
-numeros = 0
-
-while numeros >= 0:
-  numeros = int(input())
-  if numeros > 0:
-    positivos = positivos + 1
-
-print(positivos)
----------------------------------------
 ---
 ## **Exercício 3:** Cadê você?
 
