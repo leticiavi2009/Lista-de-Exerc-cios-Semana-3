@@ -56,45 +56,7 @@ elif pesos1 == capacidade:
 
 
 
----
-## **Exercício 4:** Injustiça salarial
 
-A professora está estudando a diferença salarial entre homens e mulheres em uma mesma função. Para isso, ela pediu sua ajuda para criar um programa que leia pares de salários, sendo sempre o salário do homem primeiro e o da mulher em seguida. A leitura termina quando o par -1 e -1 for informado.
-
-O programa deve contar quantos pares indicam igualdade salarial entre homem e mulher naquela posição, e imprimir esse total.
-
-*Exemplo*
-
-Entrada digitada:
-```
-1000.00
-1000.00
-1200.00
-1100.00
--1
--1
-```
-
-Programa imprime:
-```
-1
-```
----------------------------------------
-#Exercício4
-
-salario = 0
-salario1 = 0
-
-igualdade = 0
-
-while salario1 != -1 and salario != -1 :
-  salario = float(input())
-  salario1 = float(input())
-  if salario == salario1:
-    igualdade = igualdade + 1
-
-print(igualdade - 1)
----------------------------------------
 ---
 ## **Exercício 5:** Entradas e Saídas
 
