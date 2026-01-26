@@ -1,0 +1,39 @@
+
+---
+## **Exercício 5:** Entradas e Saídas
+
+A professora está ajudando seus alunos a entender como funcionam operações de entrada e saída em um caixa de banco. Ela pediu sua ajuda para criar um programa que leia valores numéricos representando essas operações:
+
+- Valores positivos representam depósitos.
+- Valores negativos representam saques.
+- A leitura termina quando for digitado o valor 0.
+
+O programa deve calcular e imprimir o saldo final ao fim do dia.
+
+*Exemplo*
+
+Entrada digitada:
+```
+100
+-20
+-30
+50
+0
+```
+
+Programa imprime:
+```
+100
+```
+---------------------------------------
+#Exercício5
+
+saldo = 0
+saldo1 = 1
+
+while saldo1 != 0:
+  saldo1 = int(input())
+  saldo = saldo1 + saldo
+
+print( saldo )
+---------------------------------------
